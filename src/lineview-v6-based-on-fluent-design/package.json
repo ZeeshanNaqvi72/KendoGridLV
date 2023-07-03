@@ -1,0 +1,9 @@
+{
+  "name": "LineView-v6-Based-on-Fluent-Design",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@progress/kendo-theme-fluent": "6.0.3",
+    "LineView-v6-Based-on-Fluent-Design": "file:./src/lineview-v6-based-on-fluent-design"
+  }
+}

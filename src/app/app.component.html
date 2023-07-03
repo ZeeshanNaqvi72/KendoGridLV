@@ -1,0 +1,19 @@
+<h1>Kendo Grid</h1>
+<hr />
+<div>
+  <br /><br />
+  <kendo-grid [data]="gridData">
+    <kendo-grid-column field="ProductID" title="ID"> </kendo-grid-column>
+    <kendo-grid-column field="ProductName" title="Name"> </kendo-grid-column>
+    <kendo-grid-column field="Category.CategoryName" title="Category">
+    </kendo-grid-column>
+    <kendo-grid-column field="UnitPrice" title="Price"> </kendo-grid-column>
+    <kendo-grid-column>
+      <ng-template kendoGridCellTemplate let-element>
+        <button kendoButton  fillMode="solid"
+        [primary]="true" class="margin-right-spacing-s">Edit</button>
+        <button kendoButton fillMode="solid" secondary="true">Cancel</button>
+      </ng-template>
+    </kendo-grid-column>
+  </kendo-grid>
+</div>

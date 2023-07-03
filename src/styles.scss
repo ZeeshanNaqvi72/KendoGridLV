@@ -1,0 +1,167 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./src/lineview-v6-based-on-fluent-design/dist/scss";
+
+body{
+  margin: 0px;
+  background-color: var(--tb-light);
+  @extend %tb-typography-body-large;
+}
+
+html,
+body,
+app-root,
+app-lineview-nav {
+  padding: 0;
+  height: 100%;
+}
+
+app-root,
+app-lineview-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+kendo-formfield {
+  padding-top: var(--tb-spacing-l);
+}
+
+.form{
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.k-drawer {
+  background-color: var(--tb-warm-grey-20);
+}
+
+.k-drawer-content {
+  padding-top: var(--tb-spacing-l);
+  padding-bottom: var(--tb-spacing-l);
+  padding-left: var(--tb-spacing-xxxl);
+  padding-right: var(--tb-spacing-l);
+  flex: 1 1 auto;
+  overflow-y: auto;
+  align-self: stretch;
+  background-color: var(--tb-light);
+}
+
+.k-drawer-item:hover{
+  filter: invert(48%) sepia(88%) saturate(1265%) hue-rotate(347deg) brightness(98%) contrast(94%);
+}
+
+.k-drawer-item.k-selected{
+  filter: invert(48%) sepia(88%) saturate(1265%) hue-rotate(347deg) brightness(98%) contrast(94%);
+}
+.k-drawer-separator{
+  background-color: var(--tb-warm-grey-20) !important;
+}
+.k-drawer-container {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+kendo-loader{
+  margin: auto;
+}
+
+h1{
+  @extend %tb-typography-headline-large;
+}
+
+h2{
+  @extend %tb-typography-headline-medium;
+}
+
+h3{
+  @extend %tb-typography-headline-small;
+}
+
+.titlebar-large {
+  @extend %tb-typography-titlebar-large;
+}
+
+.display-large {
+  @extend %tb-typography-display-large;
+}
+
+.display-medium {
+  @extend %tb-typography-display-medium;
+}
+
+.display-small {
+  @extend %tb-typography-display-small;
+}
+
+.headline-large {
+  @extend %tb-typography-headline-large;
+}
+
+.headline-medium {
+  @extend %tb-typography-headline-medium;
+}
+
+.headline-small {
+  @extend %tb-typography-headline-small;
+}
+
+.title-large {
+  @extend %tb-typography-title-large;
+}
+
+.title-medium {
+  @extend %tb-typography-title-medium;
+}
+
+.title-small {
+  @extend %tb-typography-title-small;
+}
+
+.label-xlarge {
+  @extend %tb-typography-label-xlarge;
+}
+
+.label-large {
+  @extend %tb-typography-label-large;
+}
+
+.label-medium {
+  @extend %tb-typography-label-medium;
+}
+
+.label-small {
+  @extend %tb-typography-label-small;
+}
+
+.body-xlarge {
+  @extend %tb-typography-body-xlarge;
+}
+
+.body-large {
+  @extend %tb-typography-body-large;
+}
+
+.body-medium {
+  @extend %tb-typography-body-medium;
+}
+
+.body-small {
+  @extend %tb-typography-body-small;
+}
+
+hr {
+  height: 2px;
+  background-color: var(--tb-warm-grey-100);
+  color: var(--tb-warm-grey-100);
+}
+
+.margin-right-spacing-s {
+  margin-right: var(--tb-spacing-s)
+}
+
+.grid-action-button {
+  height: 24px;
+  width: 24px;
+}
+

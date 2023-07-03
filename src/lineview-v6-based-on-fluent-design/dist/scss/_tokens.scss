@@ -1,0 +1,312 @@
+// Compatible with @progress/kendo-theme-fluent v.6.0.3
+
+:root {
+  --tb-kendo-border-radius-md: 0.25rem;
+  --tb-kendo-border-radius-lg: 0.5rem;
+  --tb-spacing-xxs: 4px;
+  --tb-spacing-xs: 8px;
+  --tb-spacing-s: 12px;
+  --tb-spacing-m: 16px;
+  --tb-spacing-l: 24px;
+  --tb-spacing-xl: 32px;
+  --tb-spacing-xxl: 40px;
+  --tb-spacing-xxxl: 48px;
+  --tb-kendo-primary-10: #FBECE4;
+  --tb-kendo-primary-20: #F8DCCE;
+  --tb-kendo-primary-30: #F6CCB6;
+  --tb-kendo-primary-40: #F4BD9F;
+  --tb-kendo-primary-50: #F3AC86;
+  --tb-kendo-primary-60: #F29C6E;
+  --tb-kendo-primary-70: #F28E54;
+  --tb-kendo-primary-80: #F27E3A;
+  --tb-kendo-primary-90: #F36E20;
+  --tb-kendo-primary-100: #F37321;
+  --tb-kendo-primary-110: #F37520;
+  --tb-kendo-primary-120: #F0660A;
+  --tb-kendo-primary-130: #DA5B07;
+  --tb-kendo-primary-140: #C35404;
+  --tb-kendo-primary-150: #AC4902;
+  --tb-kendo-primary-160: #943E00;
+  --tb-kendo-primary-170: #7A3500;
+  --tb-kendo-primary-180: #612A00;
+  --tb-kendo-primary-190: #471F00;
+  --tb-kendo-primary-200: #2E1500;
+  --tb-kendo-primary-210: #140900;
+  --tb-kendo-primary-220: #000000;
+  --tb-kendo-neutral-10:  #faf9f8;
+  --tb-kendo-neutral-20:  #f3f2f1;
+  --tb-kendo-neutral-30:  #edebe9;
+  --tb-kendo-neutral-40:  #e1dfdd;
+  --tb-kendo-neutral-50:  #d2d0ce;
+  --tb-kendo-neutral-60:  #c8c6c4;
+  --tb-kendo-neutral-70:  #bdbbb8;
+  --tb-kendo-neutral-80:  #b3b0ad;
+  --tb-kendo-neutral-90:  #a19f9d;
+  --tb-kendo-neutral-100: #979593;
+  --tb-kendo-neutral-110: #8a8886;
+  --tb-kendo-neutral-120: #797775;
+  --tb-kendo-neutral-130: #605e5c;
+  --tb-kendo-neutral-140: #484644;
+  --tb-kendo-neutral-150: #3b3a39;
+  --tb-kendo-neutral-160: #323130;
+  --tb-kendo-neutral-170: #292827;
+  --tb-kendo-neutral-180: #252423;
+  --tb-kendo-neutral-190: #201f1e;
+  --tb-kendo-neutral-200: #1b1a19;
+  --tb-kendo-neutral-210: #161514;
+  --tb-kendo-neutral-220: #11100f;
+  --tb-kendo-tertiary-100: #7ac5b1;
+  --tb-kendo-error-100: #f04e1f;
+  --tb-kendo-success-100: #7ac5b1;
+  --tb-kendo-warning-100: #19222a;
+  --tb-kendo-info-100: #0000ff;
+  --tb-kendo-body-bg: #f1f1ec;
+  --tb-kendo-series-a-100: #004c6d;
+  --tb-kendo-series-b-100: #004c6dcc;
+  --tb-kendo-series-c-100: #004c6d99;
+  --tb-kendo-series-d-100: #004c6d66;
+  --tb-kendo-series-e-100: #004c6d33;
+  --tb-kendo-series-f-100: #004c6d1a;
+  --tb-warm-grey-100: #19222a;
+  --tb-accent-100: #7ac5b1;
+  --tb-black-100: #212222;
+  --tb-white: #ffffff;
+  --tb-warm-grey-20: #19222a33;
+  --tb-warm-grey-60: #19222a99;
+  --tb-warm-grey-80: #19222acc;
+  --tb-warm-grey-40: #19222a66;
+  --tb-black-80: #212222cc;
+  --tb-black-60: #21222299;
+  --tb-black-40: #21222266;
+  --tb-black-20: #21222233;
+  --tb-accent-80: #7ac5b1cc;
+  --tb-accent-60: #7ac5b199;
+  --tb-accent-40: #7ac5b166;
+  --tb-accent-20: #7ac5b133;
+  --tb-light: #f1f1ec;
+  --tb-red-purered: #ff0000;
+  --tb-red-microsoft: #f04e1f;
+  --tb-blue-hyperlink: #00f;
+  --tb-warm-grey-10: #19222a1a;
+  --tb-kendo-box-shadow-depth-1: 0px 1.6px 3.6px 0 #00000022, 0px 0.3px 0.9px 0 #0000001c;
+  --tb-kendo-box-shadow-depth-2: 0px 3.2px 7.2px 0 #00000022, 0px 0.6px 1.8px 0 #0000001c;
+  --tb-kendo-box-shadow-depth-3: 0px 6.4px 14.4px 0 #00000022, 0px 1.2px 3.6px 0 #0000001c;
+  --tb-kendo-box-shadow-depth-4: 0px 25.6px 57.6px 0 #00000038, 0px 4.8px 14.4px 0 #0000002e;
+
+  --kendo-border-radius-md: var(--tb-kendo-border-radius-md);
+  --kendo-primary-10: var(--tb-kendo-primary-10);
+  --kendo-primary-20: var(--tb-kendo-primary-20);
+  --kendo-primary-30: var(--tb-kendo-primary-30);
+  --kendo-primary-40: var(--tb-kendo-primary-40);
+  --kendo-primary-50: var(--tb-kendo-primary-50);
+  --kendo-primary-60: var(--tb-kendo-primary-60);
+  --kendo-primary-70: var(--tb-kendo-primary-70);
+  --kendo-primary-80: var(--tb-kendo-primary-80);
+  --kendo-primary-90: var(--tb-kendo-primary-90);
+  --kendo-primary-100: var(--tb-kendo-primary-100);
+  --kendo-primary-110: var(--tb-kendo-primary-110);
+  --kendo-primary-120: var(--tb-kendo-primary-120);
+  --kendo-primary-130: var(--tb-kendo-primary-130);
+  --kendo-primary-140: var(--tb-kendo-primary-140);
+  --kendo-primary-150: var(--tb-kendo-primary-150);
+  --kendo-primary-160: var(--tb-kendo-primary-160);
+  --kendo-primary-170: var(--tb-kendo-primary-170);
+  --kendo-primary-180: var(--tb-kendo-primary-180);
+  --kendo-primary-190: var(--tb-kendo-primary-190);
+  --kendo-primary-200: var(--tb-kendo-primary-200);
+  --kendo-primary-210: var(--tb-kendo-primary-210);
+  --kendo-primary-220: var(--tb-kendo-primary-220);
+  --kendo-neutral-10: var(--tb-kendo-neutral-10);
+  --kendo-neutral-20: var(--tb-kendo-neutral-20);
+  --kendo-neutral-30: var(--tb-kendo-neutral-30);
+  --kendo-neutral-40: var(--tb-kendo-neutral-40);
+  --kendo-neutral-50: var(--tb-kendo-neutral-50);
+  --kendo-neutral-60: var(--tb-kendo-neutral-60);
+  --kendo-neutral-70: var(--tb-kendo-neutral-70);
+  --kendo-neutral-80: var(--tb-kendo-neutral-80);
+  --kendo-neutral-90: var(--tb-kendo-neutral-90);
+  --kendo-neutral-100: var(--tb-kendo-neutral-100);
+  --kendo-neutral-110: var(--tb-kendo-neutral-110);
+  --kendo-neutral-120: var(--tb-kendo-neutral-120);
+  --kendo-neutral-130: var(--tb-kendo-neutral-130);
+  --kendo-neutral-140: var(--tb-kendo-neutral-140);
+  --kendo-neutral-150: var(--tb-kendo-neutral-150);
+  --kendo-neutral-160: var(--tb-kendo-neutral-160);
+  --kendo-neutral-170: var(--tb-kendo-neutral-170);
+  --kendo-neutral-180: var(--tb-kendo-neutral-180);
+  --kendo-neutral-190: var(--tb-kendo-neutral-190);
+  --kendo-neutral-200: var(--tb-kendo-neutral-200);
+  --kendo-neutral-210: var(--tb-kendo-neutral-210);
+  --kendo-neutral-220: var(--tb-kendo-neutral-220);
+  --kendo-tertiary-100: var(--tb-kendo-tertiary-100);
+  --kendo-error-100: var(--tb-kendo-error-100);
+  --kendo-success-100: var(--tb-kendo-success-100);
+  --kendo-warning-100: var(--tb-kendo-warning-100);
+  --kendo-info-100: var(--tb-kendo-info-100);
+  --kendo-body-bg: var(--tb-kendo-body-bg);
+  --kendo-series-a-100: var(--tb-kendo-series-a-100);
+  --kendo-series-b-100: var(--tb-kendo-series-b-100);
+  --kendo-series-c-100: var(--tb-kendo-series-c-100);
+  --kendo-series-d-100: var(--tb-kendo-series-d-100);
+  --kendo-series-e-100: var(--tb-kendo-series-e-100);
+  --kendo-series-f-100: var(--tb-kendo-series-f-100);
+  --kendo-box-shadow-depth-1: var(--tb-kendo-box-shadow-depth-1);
+  --kendo-box-shadow-depth-2: var(--tb-kendo-box-shadow-depth-2);
+  --kendo-box-shadow-depth-3: var(--tb-kendo-box-shadow-depth-3);
+  --kendo-box-shadow-depth-4: var(--tb-kendo-box-shadow-depth-4);
+
+  --kendo-font-family: "Segoe UI", -apple-system, Roboto;
+  --kendo-font-size: 16px;
+  --kendo-font-weight: 400;
+  --kendo-line-height: 1.4285714286;
+}
+
+$tb-typography: (
+  kendo-default-typography: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 16px,
+      font-weight: 400,
+      line-height: 1.4285714286,
+  ),
+  display-large: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 57px,
+      font-weight: 600,
+      line-height: 72px,
+  ),
+  titlebar-large: (
+      font-family: 'omnes-regular-webfont, -apple-system, Roboto',
+      font-size: 29px,
+      font-weight: 400,
+      line-height: 32px,
+  ),
+  display-medium: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 45px,
+      font-weight: 600,
+      line-height: 48px,
+  ),
+  display-small: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 36px,
+      font-weight: 600,
+      line-height: 40px,
+  ),
+  headline-large: (
+      font-family: 'omnes-medium-webfont, -apple-system, Roboto',
+      font-size: 40px,
+      font-weight: 500,
+      line-height: 48px,
+  ),
+  headline-medium: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 28px,
+      font-weight: 600,
+      line-height: 32px,
+  ),
+  headline-small: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 24px,
+      font-weight: 600,
+      line-height: 32px,
+  ),
+  title-large: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 24px,
+      font-weight: 600,
+      line-height: 32px,
+  ),
+  title-medium: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 16px,
+      font-weight: 600,
+      line-height: 24px,
+  ),
+  title-small: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 14px,
+      font-weight: 600,
+      line-height: 24px,
+  ),
+  label-xlarge: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 19px,
+      font-weight: 600,
+      line-height: 24px,
+  ),
+  label-large: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 16px,
+      font-weight: 600,
+      line-height: 24px,
+  ),
+  label-medium: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 14px,
+      font-weight: 600,
+      line-height: 16px,
+  ),
+  label-small: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 12px,
+      font-weight: 600,
+      line-height: 16px,
+  ),
+  body-xlarge: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 19px,
+      font-weight: 400,
+      line-height: 24px,
+  ),
+  body-large: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 16px,
+      font-weight: 400,
+      line-height: 24px,
+  ),
+  body-medium: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 14px,
+      font-weight: 400,
+      line-height: 24px,
+  ),
+  body-small: (
+      font-family: '"Segoe UI", -apple-system, Roboto',
+      font-size: 12px,
+      font-weight: 400,
+      line-height: 16px,
+  ),
+);
+
+@mixin typography-classes ($typography) {
+  @each $selector, $property in $typography {
+    &-#{$selector} {
+      @each $propName, $propValue in $property {
+        #{$propName}: #{$propValue};
+      }
+    }
+  }
+}
+
+$tb-effects: (
+  kendo-box-shadow-depth-1: (
+      box-shadow: (0px 1.6px 3.6px 0 #00000022, 0px 0.3px 0.9px 0 #0000001c),  ),
+  kendo-box-shadow-depth-2: (
+      box-shadow: (0px 3.2px 7.2px 0 #00000022, 0px 0.6px 1.8px 0 #0000001c),  ),
+  kendo-box-shadow-depth-3: (
+      box-shadow: (0px 6.4px 14.4px 0 #00000022, 0px 1.2px 3.6px 0 #0000001c),  ),
+  kendo-box-shadow-depth-4: (
+      box-shadow: (0px 25.6px 57.6px 0 #00000038, 0px 4.8px 14.4px 0 #0000002e),  ),
+  tb-internal-none-effects: (
+      box-shadow: (none), filter: (none), backdrop-filter: (none),  ),
+);
+
+@mixin effects-classes ($effects) {
+  @each $selector, $property in $effects {
+    &-#{$selector} {
+      @each $propName, $propValue in $property {
+        #{$propName}: $propValue;
+      }
+    }
+  }
+}
