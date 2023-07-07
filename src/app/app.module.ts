@@ -8,8 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationModule } from '@progress/kendo-angular-navigation';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from '@progress/kendo-angular-buttons';
-
-
+import { SVGIconModule } from '@progress/kendo-angular-icons';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,7 +23,10 @@ import { ButtonModule } from '@progress/kendo-angular-buttons';
     BrowserAnimationsModule,
     NavigationModule,
     FormsModule,
-    ButtonModule
+    ButtonModule,
+    SVGIconModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

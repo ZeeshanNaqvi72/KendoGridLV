@@ -1,3 +1,10 @@
 body{
  background-color: var(--tb-light);
 }
+.grid-setting{
+  width: 100%;
+  max-height: 65% !important;
+}
+#my-grid tr.edited-row  {
+  background-color: var(--tb-kendo-primary-20);
+}

@@ -1,19 +1,89 @@
-<h1>Kendo Grid</h1>
+<h1>Kendo Grid 1</h1>
+
+<kendo-grid
+#grid
+id="my-grid"
+[rowClass]="rowClass"
+class="grid-setting"
+[data]="view | async"
+[pageable]="false"
+[sortable]="true"
+[height]="400"
+[columnMenu] = "{ filter:true, sort:true }"
+(dataStateChange)="onStateChange($event)"
+(cellClick)="cellClickHandler($event)"
+(cellClose)="cellCloseHandler($event)"
+(cancel)="cancelHandler($event)"
+(save)="saveHandler($event)"
+(remove)="removeHandler($event)"
+(add)="addHandler($event)"
+
+>
+<ng-template kendoGridToolbarTemplate>
+  <button kendoGridAddCommand fillMode="solid"
+  [primary]="true">Add new</button>
+  <button
+    kendoButton
+    [disabled]="!editService.hasChanges()"
+    (click)="saveChanges(grid)"
+  >
+    Save Changes
+  </button>
+  <button
+    kendoButton
+    [disabled]="!editService.hasChanges()"
+    (click)="cancelChanges(grid)"
+  >
+    Cancel Changes
+  </button>
+</ng-template>
+<kendo-grid-column
+  field="ProductName"
+  title="Product Name"
+></kendo-grid-column>
+<kendo-grid-column
+  field="UnitPrice"
+  editor="numeric"
+  title="Price"
+></kendo-grid-column>
+<kendo-grid-column
+  field="Discontinued"
+  editor="boolean"
+  title="Discontinued"
+></kendo-grid-column>
+<kendo-grid-column
+  field="UnitsInStock"
+  editor="numeric"
+  title="Units In Stock"
+></kendo-grid-column>
+<kendo-grid-command-column [width]="200" [columnMenu]="false">
+  <ng-template kendoGridCellTemplate let-isNew="isNew">
+    <button kendoGridRemoveCommand fillMode="flat"><kendo-svg-icon [icon]="icons.trashIcon" class="k-icon-lg"></kendo-svg-icon></button>
+    <button kendoGridSaveCommand fillMode="solid"
+    [primary]="true">Add</button>
+    <button kendoGridCancelCommand>Cancel</button>
+  </ng-template>
+</kendo-grid-command-column>
+</kendo-grid>
+
+
+<!-- <h1>Kendo Grid 2</h1>
 <hr />
 <div>
   <br /><br />
-  <kendo-grid [data]="gridData">
-    <kendo-grid-column field="ProductID" title="ID"> </kendo-grid-column>
-    <kendo-grid-column field="ProductName" title="Name"> </kendo-grid-column>
-    <kendo-grid-column field="Category.CategoryName" title="Category">
-    </kendo-grid-column>
+  <kendo-grid [data]="view | async" (remove)="removeHandler($event)">
+    <kendo-grid-column field="ProductName" title="Product Name"></kendo-grid-column>
+    <kendo-grid-column field="UnitPrice" title="Price"></kendo-grid-column>
+    <kendo-grid-column field="Discontinued" title="Discontinued"></kendo-grid-column>
+    <kendo-grid-column field="UnitsInStock" title="Units In Stock"></kendo-grid-column>
     <kendo-grid-column field="UnitPrice" title="Price"> </kendo-grid-column>
-    <kendo-grid-column>
-      <ng-template kendoGridCellTemplate let-element>
-        <button kendoButton  fillMode="solid"
-        [primary]="true" class="margin-right-spacing-s">Edit</button>
-        <button kendoButton fillMode="solid" secondary="true">Cancel</button>
+    <kendo-grid-command-column [width]="200" [columnMenu]="false">
+      <ng-template kendoGridCellTemplate let-isNew="isNew">
+        <button kendoGridRemoveCommand fillMode="flat"><kendo-svg-icon [icon]="icons.trashIcon" class="k-icon-lg"></kendo-svg-icon></button>
+        <button kendoGridSaveCommand fillMode="solid"
+        [primary]="true">Add</button>
+        <button kendoGridCancelCommand>Cancel</button>
       </ng-template>
-    </kendo-grid-column>
+    </kendo-grid-command-column>
   </kendo-grid>
-</div>
+</div> -->
